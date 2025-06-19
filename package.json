@@ -1,12 +1,13 @@
 {
   "name": "essai-server-local",
-  "version": "1.0.0",
+  "version": "1.0.1-beta",
   "description": "Application web locale fonctionnant hors ligne",
   "main": "main.js",
   "scripts": {
     "start": "node server.js",
     "electron": "electron .",
-    "build": "electron-builder --win --publish always"
+    "build": "electron-builder --win --publish always",
+    "clean": "del /s /q dist"
   },
   "author": "Mirantsoa",
   "license": "MIT",
