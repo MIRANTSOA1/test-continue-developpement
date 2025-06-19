@@ -11,12 +11,12 @@
   "author": "Mirantsoa",
   "license": "MIT",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "electron-updater": "^6.6.2"
   },
   "devDependencies": {
     "electron": "^36.5.0",
-    "electron-builder": "^26.0.12",
-    "electron-updater": "^6.6.2"
+    "electron-builder": "^26.0.12"
   },
   "build": {
     "appId": "com.mirantsoa.essaiserverlocal",
