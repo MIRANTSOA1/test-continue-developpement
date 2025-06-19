@@ -27,8 +27,8 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "your-github-username",
-        "repo": "essai-server-local"
+        "owner": "MIRANTSOA1",
+        "repo": "test-continue-developpement"
       }
     ]
   }
