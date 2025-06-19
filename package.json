@@ -1,0 +1,35 @@
+{
+  "name": "essai-server-local",
+  "version": "1.0.0",
+  "description": "Application web locale fonctionnant hors ligne",
+  "main": "main.js",
+  "scripts": {
+    "start": "node server.js",
+    "electron": "electron .",
+    "build": "electron-builder --win --publish always"
+  },
+  "author": "Mirantsoa",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "electron": "^36.5.0",
+    "electron-builder": "^26.0.12",
+    "electron-updater": "^6.6.2"
+  },
+  "build": {
+    "appId": "com.mirantsoa.essaiserverlocal",
+    "productName": "Essai Server Local",
+    "win": {
+      "target": ["portable"]
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "your-github-username",
+        "repo": "essai-server-local"
+      }
+    ]
+  }
+}
