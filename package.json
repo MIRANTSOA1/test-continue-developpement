@@ -10,7 +10,10 @@
     "clean": "del /s /q dist",
     "clean-build": "npm run clean && npm run build"
   },
-  "author": "Mirantsoa",
+  "author": {
+    "name": "Mirantsoa",
+    "email": "rakotomalalamirantsoa1@gmail.com"
+  },
   "license": "MIT",
   "dependencies": {
     "electron-log": "^5.4.1",
