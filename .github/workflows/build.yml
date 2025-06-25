@@ -1,0 +1,32 @@
+name: Build & Release
+
+on:
+  push:
+    branches: [ main ] # Se déclenche à chaque push sur la branche main
+
+jobs:
+  release:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        # Construire sur les 3 plateformes
+        os: [macos-latest, ubuntu-latest, windows-latest]
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build and release
+        env:
+          # Ce token est NÉCESSAIRE pour que electron-builder puisse publier sur GitHub
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run build -- --publish always

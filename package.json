@@ -1,6 +1,6 @@
 {
   "name": "essai-server-local",
-  "version": "1.0.7-alpha",
+  "version": "1.0.7-alpha-multiplateform",
   "description": "Application web locale fonctionnant hors ligne",
   "main": "main.js",
   "scripts": {
@@ -28,6 +28,13 @@
       "target": [
         "nsis"
       ]
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "AppImage"
+      ],
+      "category": "Utility"
     },
     "publish": [
       {
