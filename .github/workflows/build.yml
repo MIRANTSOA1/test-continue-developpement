@@ -10,8 +10,8 @@ jobs:
 
     strategy:
       matrix:
-        # Construire sur les 3 plateformes
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        # Construire sur les 2 plateformes
+        os: [ubuntu-latest, windows-latest]
 
     steps:
       - name: Check out Git repository
