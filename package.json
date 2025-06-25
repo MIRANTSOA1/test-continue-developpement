@@ -1,6 +1,6 @@
 {
   "name": "essai-server-local",
-  "version": "1.0.8-alpha-multiplateform",
+  "version": "1.0.8-alpha",
   "description": "Application web locale fonctionnant hors ligne",
   "main": "main.js",
   "scripts": {
