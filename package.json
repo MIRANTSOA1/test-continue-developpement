@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "electron": "electron .",
-    "build": "electron-builder --win --publish always",
+    "build": "electron-builder --publish always",
     "clean": "del /s /q dist",
     "clean-build": "npm run clean && npm run build"
   },

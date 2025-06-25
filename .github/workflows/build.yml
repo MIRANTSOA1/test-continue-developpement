@@ -29,4 +29,4 @@ jobs:
         env:
           # Ce token est NÉCESSAIRE pour que electron-builder puisse publier sur GitHub
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm run build -- --publish always
+        run: npm run build 
